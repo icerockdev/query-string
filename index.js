@@ -22,6 +22,7 @@ function encoderForArrayFormat(options) {
 				];
 			};
 
+		case 'object':
 		case 'bracket':
 			return key => (result, value) => {
 				if (value === undefined) {
